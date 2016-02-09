@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:layout_width="match_parent"
+    android:layout_height="match_parent"> -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period Start: "
+        android:id="@+id/TxtPeriodS" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period Ends: "
+        android:id="@+id/TxtPeriodE"
+        android:layout_below="@+id/BtnIDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/TxtPeriodE"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Initial Date"
+        android:id="@+id/BtnIDate"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Final Date"
+        android:id="@+id/BtnFDate"
+        android:layout_above="@+id/datePicker"
+        android:layout_alignLeft="@+id/BtnIDate"
+        android:layout_alignStart="@+id/BtnIDate"
+        android:layout_alignRight="@+id/BtnIDate"
+        android:layout_alignEnd="@+id/BtnIDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date1"
+        android:id="@+id/TxtDateInitial"
+        android:layout_alignBottom="@+id/BtnIDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date2"
+        android:id="@+id/TxtDateEnd"
+        android:layout_below="@+id/TxtPeriodE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:id="@+id/BtnCalculate"
+        android:layout_below="@+id/BtnFDate"
+        android:layout_alignRight="@+id/BtnIDate"
+        android:layout_alignEnd="@+id/BtnIDate"
+        android:layout_alignLeft="@+id/BtnFDate"
+        android:layout_alignStart="@+id/BtnFDate" />
+
+</merge>
